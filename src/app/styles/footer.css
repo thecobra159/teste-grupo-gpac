@@ -1,0 +1,13 @@
+@layer footer-component {
+  .footer-wrapper {
+    @apply flex flex-col items-center justify-center w-full h-80 bg-gpac-black;
+  }
+
+  .footer-title {
+    @apply font-bold text-5xl uppercase;
+  }
+
+  .footer-content {
+    @apply font-thin text-xl text-white/50 uppercase;
+  }
+}

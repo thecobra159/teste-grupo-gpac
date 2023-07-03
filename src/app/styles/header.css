@@ -1,0 +1,25 @@
+@layer header-component {
+  .header-container {
+    @apply flex justify-between items-center w-full h-24 px-32 bg-transparent fixed top-0 transition-all z-20;
+  }
+
+  .scrolled {
+    @apply bg-gpac-black/80 border-t-0 border-gpac-black;
+  }
+
+  .header-title {
+    @apply font-bold text-5xl uppercase;
+  }
+
+  .header-icon {
+    @apply bg-transparent border-none;  
+  }
+
+  .header-search-area {
+    @apply flex gap-3;
+  }
+
+  .header-search-input {
+    @apply w-48 rounded bg-gray-300/50 p-2 text-black focus:outline-none;
+  }
+}

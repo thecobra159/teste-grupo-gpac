@@ -1,7 +1,13 @@
+import { Header } from './components/header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { Footer } from './components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+config.autoAddCss = false
+
+const raleway = Raleway({ weight: '400', subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={raleway.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

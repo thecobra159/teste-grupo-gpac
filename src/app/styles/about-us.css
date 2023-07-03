@@ -1,0 +1,25 @@
+@layer about-us-Component {
+  .about-us-wrapper {
+    @apply flex items-center w-full min-h-[75vh] bg-white text-black;
+  }
+
+  .about-us-content {
+    @apply flex flex-col justify-center pl-32 w-full h-full;
+  }
+
+  .about-us-title {
+    @apply font-semibold text-black text-5xl uppercase;
+  }
+
+  .about-us-text {
+    @apply w-4/5 font-normal text-black text-lg pt-8;
+  }
+
+  .about-us-image {
+    @apply w-4/5 border-cyan-900 border-2 border-solid;
+  }
+
+  .about-us-image-title {
+    @apply text-gpac-red uppercase font-semibold text-[140px] leading-[100px] -mt-14 ml-60;
+  }
+}

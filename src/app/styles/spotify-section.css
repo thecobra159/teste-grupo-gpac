@@ -1,0 +1,9 @@
+@layer spotify-section {
+  .spotify-section-wrapper {
+    @apply w-full h-[50vh] grid grid-cols-4;
+  }
+
+  .spotify-section-playlist {
+    @apply w-full h-full;
+  }
+}

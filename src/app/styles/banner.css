@@ -1,0 +1,53 @@
+@layer banner-component {
+  .banner-wrapper {
+    @apply flex h-screen w-full;
+  }
+
+  .banner-image {
+    @apply h-screen w-screen top-0 left-0 object-cover absolute;
+  }
+
+  .banner-carousel {
+    @apply flex items-center h-full w-full z-10;
+  }
+
+  .carousel-navigation {
+    @apply flex flex-col;
+  }
+
+  .carousel-index {
+    @apply flex items-center ml-0 font-semibold;
+  }
+
+  .carousel-index p { 
+    @apply cursor-pointer text-2xl;
+  }
+
+  .carousel-index + .carousel-index {
+    @apply mt-4;
+  }
+
+  .separator {
+    @apply w-48 h-px bg-white/25 mr-2;
+  }
+
+  .separator-double {
+    @apply w-72 h-px bg-white/25 ml-2;
+  }
+
+  .banner-corousel-content {
+    @apply flex flex-col ml-4;
+  }
+
+  .first-title {
+    @apply uppercase text-9xl font-extralight m-0 p-0;
+  }
+
+  .second-title {
+    @apply uppercase text-[240px] leading-[200px] font-bold text-gpac-red/50 m-0 p-0;
+  }
+
+  .third-title {
+    @apply uppercase text-9xl font-bold m-0 p-0;
+  }
+}

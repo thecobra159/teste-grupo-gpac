@@ -58,7 +58,7 @@ export default function Home() {
         content={videoSectionContent}
         videoSrc={videoSrc}
       />
-      {/* <SpotifySection /> */}
+      <SpotifySection />
       <ContactUsSection
         imageSrc={contactUsBannerSrc}
         imageAlt="contact us image"

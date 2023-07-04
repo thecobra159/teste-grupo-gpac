@@ -1,9 +1,13 @@
 @layer spotify-section {
   .spotify-section-wrapper {
-    @apply w-full h-[50vh] grid grid-cols-4;
+    @apply w-full grid grid-cols-4 grid-rows-1 z-10;
   }
 
-  .spotify-section-playlist {
-    @apply w-full h-full;
+  .spotify-card {
+    @apply w-full h-full overflow-hidden;
+  }
+
+  .spotify-image {
+    @apply w-full h-full object-cover transform hover:scale-150;
   }
 }

@@ -21,7 +21,6 @@ export function VideoSection({
   const [isPlaying, setIsPlaying] = useState(false)
 
   function handlePlayVideo() {
-    console.log('chegou aqui')
     setIsPlaying(!isPlaying)
   }
 

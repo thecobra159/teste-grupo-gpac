@@ -1,6 +1,6 @@
 @layer video-section-component {
   .video-section-wrapper {
-    @apply items-start justify-center w-full min-h-[75vh];
+    @apply w-full min-h-[75vh] relative;
   }
 
   .video-section-content {

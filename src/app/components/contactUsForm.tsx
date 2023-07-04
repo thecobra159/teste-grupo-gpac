@@ -1,5 +1,5 @@
 import { Bebas_Neue } from 'next/font/google'
-import { constants } from '../utils/utils'
+import { Constants } from '../utils/utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import '@/app/styles/contact-us-form.css'
@@ -15,7 +15,7 @@ export function ContactUsForm(): JSX.Element {
             <FontAwesomeIcon icon={faEnvelope} size={'2x'} />
             <p>email</p>
           </div>
-          <div className="contact-sub-item">{constants.email}</div>
+          <div className="contact-sub-item">{Constants.email}</div>
         </div>
 
         <div className="contact-item">
@@ -23,7 +23,7 @@ export function ContactUsForm(): JSX.Element {
             <FontAwesomeIcon icon={faPhone} size={'2x'} />
             <p>whatsapp</p>
           </div>
-          <div className="contact-sub-item">{constants.whatsapp}</div>
+          <div className="contact-sub-item">{Constants.whatsapp}</div>
         </div>
       </div>
 

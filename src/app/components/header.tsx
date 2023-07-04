@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { Bebas_Neue } from 'next/font/google'
 import { useEffect, useState } from 'react'
+import { InternalLinks } from '../utils/utils'
 
 const bebasNeue = Bebas_Neue({ weight: '400', subsets: ['latin'] })
 
@@ -31,7 +32,11 @@ export function Header(): JSX.Element {
         <FontAwesomeIcon icon={faBars} size={'3x'} />
       </button>
 
-      <div className={`${bebasNeue.className} header-title`}>faun</div>
+      <div className={`${bebasNeue.className} header-title`}>
+        <a href={InternalLinks.home}>
+          <button>faun</button>
+        </a>
+      </div>
 
       <div className="header-search-area">
         <input

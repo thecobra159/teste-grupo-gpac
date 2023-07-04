@@ -19,4 +19,11 @@ module.exports = {
     },
   },
   plugins: [],
+  config: {
+    variants: {
+      extend: {
+        transform: ['group-hover', 'hover'],
+      },
+    },
+  }
 }

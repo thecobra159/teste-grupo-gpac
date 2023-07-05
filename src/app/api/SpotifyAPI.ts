@@ -2,7 +2,6 @@ import {
   SpotifyGetPlaylists,
   SpotifyGetToken,
   SpotifyPlaylist,
-  SpotifyPostToken,
 } from '../interfaces/Spotify'
 
 const RevalidationTime = 3600 // revalidate in 1 hour
@@ -13,9 +12,9 @@ const SpotifyEndpoint = {
 }
 
 const SpotifyCredentials = {
-  grantType: 'client_credentials',
-  clientId: '1b786884ac934556a027654f1a8c3533',
-  clientSecret: '1341c76ce4704d42bfd0d755ec09462a',
+  grantType: process.env.NEXT_PUBLIC_SPOTIFY_GRANT_TYPE || '',
+  clientId: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID  || '',
+  clientSecret: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET  || '',
 }
 
 export async function getAccessToken(): Promise<SpotifyGetToken> {
@@ -31,6 +30,7 @@ export async function getAccessToken(): Promise<SpotifyGetToken> {
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
     },
     body: tokenData,
+    cache: 'force-cache',
     next: {
       revalidate: RevalidationTime,
     },

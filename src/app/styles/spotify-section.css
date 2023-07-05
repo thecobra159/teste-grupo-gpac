@@ -1,6 +1,10 @@
 @layer spotify-section {
   .spotify-section-wrapper {
-    @apply w-full grid grid-cols-4 grid-rows-1 z-10;
+    @apply w-full h-full;
+  }
+
+  .spotify-section-controls {
+    @apply flex justify-end gap-2 h-8 bg-transparent;
   }
 
   .spotify-card {

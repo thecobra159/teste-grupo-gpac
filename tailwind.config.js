@@ -18,6 +18,9 @@ module.exports = {
       },
     },
   },
+  corePlugins: {
+    preflight: false,
+  },
   plugins: [],
   config: {
     variants: {
@@ -25,5 +28,5 @@ module.exports = {
         transform: ['group-hover', 'hover'],
       },
     },
-  }
+  },
 }

@@ -36,12 +36,13 @@ export function ContactUsSection({
           <div className={`contact-us-title ${bebasNeue.className}`}>
             {title}
           </div>
+
           <div className="contact-us-text">{content}</div>
-          <a
-            className={`contact-us-button ${bebasNeue.className}`}
-            href={btnLink}
-          >
-            <button>{btnText}</button>
+
+          <a href={btnLink}>
+            <button className={`${bebasNeue.className} contact-us-button`}>
+              {btnText}
+            </button>
           </a>
         </div>
       </section>

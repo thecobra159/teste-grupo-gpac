@@ -32,11 +32,11 @@ export function Header(): JSX.Element {
         <FontAwesomeIcon icon={faBars} size={'3x'} />
       </button>
 
-      <div className={`${bebasNeue.className} header-title`}>
         <a href={InternalLinks.home}>
-          <button>faun</button>
-        </a>
-      </div>
+      <button className={`${bebasNeue.className} header-title`}>
+          faun
+      </button>
+          </a>
 
       <div className="header-search-area">
         <input

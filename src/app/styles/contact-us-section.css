@@ -12,10 +12,10 @@
   }
 
   .contact-us-text {
-    @apply text-white/80 text-lg font-normal mt-8 max-w-[60%] text-center;
+    @apply text-white/80 text-lg font-normal mt-8 max-w-[60%] text-center mb-16;
   }
 
   .contact-us-button {
-    @apply mt-16 p-6 border-solid border-2 border-white uppercase font-semibold text-2xl;
+    @apply p-6 text-white border-solid border-2 border-white uppercase font-semibold text-2xl;
   }
 }

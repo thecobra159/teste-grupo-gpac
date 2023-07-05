@@ -1,6 +1,6 @@
 @layer header-component {
   .header-container {
-    @apply flex justify-between items-center w-full h-24 px-32 bg-transparent fixed top-0 transition-all z-20;
+    @apply flex justify-around items-center w-full h-24 bg-transparent fixed top-0 transition-all z-20;
   }
 
   .scrolled {

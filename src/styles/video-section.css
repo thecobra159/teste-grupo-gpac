@@ -1,0 +1,37 @@
+@layer video-section-component {
+  .video-section-wrapper {
+    @apply w-full min-h-[75vh] relative;
+  }
+
+  .video-section-content {
+    /*mobile first*/
+    @apply flex flex-col py-12 px-10 max-w-[45%] z-10 absolute;
+
+    /* hd and above */
+    @apply hd:p-32;
+  }
+
+  .video-section-title {
+    /*mobile first*/
+    @apply text-gpac-red/50 text-4xl font-bold;
+
+    /* hd and above */
+    @apply hd:text-8xl;
+  }
+
+  .video-section-text {
+    /*mobile first*/
+    @apply text-white/80 text-xs font-normal;
+
+    /* hd and above */
+    @apply hd:text-lg;
+  }
+
+  .video-section-player {
+    @apply w-full h-full absolute overflow-auto;
+  }
+
+  .video-section-player video {
+    @apply w-full h-full max-h-[75vh];
+  }
+}

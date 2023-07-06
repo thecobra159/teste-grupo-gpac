@@ -3,12 +3,8 @@
     @apply w-full h-full;
   }
 
-  .spotify-section-controls {
-    @apply flex justify-end gap-2 h-8 bg-transparent;
-  }
-
   .spotify-card {
-    @apply w-full h-full overflow-hidden;
+    @apply w-full h-full overflow-hidden bg-transparent border-none;
   }
 
   .spotify-image {

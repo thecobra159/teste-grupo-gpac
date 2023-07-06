@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { Oswald } from 'next/font/google'
-import '@/app/styles/banner.css'
+import '@/styles/banner.css'
 
 interface IBanner {
   carouselItems: {

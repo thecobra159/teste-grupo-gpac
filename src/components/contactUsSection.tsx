@@ -2,7 +2,7 @@
 
 import { Parallax } from 'react-parallax'
 import { Bebas_Neue } from 'next/font/google'
-import '@/app/styles/contact-us-section.css'
+import '@/styles/contact-us-section.css'
 
 interface IContactUsSection {
   title: string

@@ -8,6 +8,6 @@
   }
 
   .footer-content {
-    @apply font-thin text-xl text-white/50 uppercase;
+    @apply font-thin text-xl text-white/50 uppercase max-w-[80%] text-center;
   }
 }

@@ -1,0 +1,37 @@
+@layer header-component {
+  .header-container {
+    /*mobile first*/
+    @apply flex justify-between items-center w-screen h-20 px-6 bg-transparent box-border fixed left-0 top-0 transition-all z-20;
+
+    /* hd and above */
+    @apply hd:px-32;
+  }
+
+  .scrolled {
+    @apply bg-gpac-black/80 border-t-0 border-gpac-black;
+  }
+
+  .header-title {
+    /*mobile first*/
+    @apply font-bold text-3xl uppercase text-white hover:text-gpac-red transition bg-transparent border-none;
+
+    /* hd and above */
+    @apply hd:text-5xl;
+  }
+
+  .header-icon {
+    @apply text-white bg-transparent border-none;
+  }
+
+  .header-search-area {
+    @apply flex gap-3;
+  }
+
+  .header-search-input {
+    /*mobile first*/
+    @apply w-24 rounded bg-gray-300/50 p-2 text-white;
+
+    /* hd and above */
+    @apply hd:w-48;
+  }
+}

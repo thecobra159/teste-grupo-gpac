@@ -1,6 +1,6 @@
 import { Oswald } from 'next/font/google'
-import '@/app/styles/about-us.css'
 import Image from 'next/image'
+import '@/styles/about-us.css'
 
 interface IAboutUs {
   title?: string
@@ -27,9 +27,13 @@ export function AboutUs({
       </div>
 
       <div className="about-us-content">
-        <div className="about-us-image">
-          <Image src={imageSrc!} alt={imageAlt!} width={691} height={435} />
-        </div>
+        <Image
+          src={imageSrc!}
+          alt={imageAlt!}
+          width={691}
+          height={435}
+          className="about-us-image"
+        />
         <div className={`about-us-image-title ${oswald.className}`}>
           {imageTitle}
         </div>

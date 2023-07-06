@@ -1,0 +1,92 @@
+@layer banner-component {
+  .banner-wrapper {
+    @apply flex h-screen w-screen;
+  }
+
+  .banner-image {
+    @apply h-screen w-screen top-0 left-0 object-cover absolute;
+  }
+
+  .banner-carousel {
+    @apply flex items-center h-full w-full z-10 bg-transparent;
+  }
+
+  .carousel-navigation {
+    @apply flex flex-col;
+  }
+
+  .carousel-index {
+    @apply flex items-center ml-0 font-semibold;
+  }
+
+  .carousel-index p {
+    /*mobile first*/
+    @apply cursor-pointer text-base;
+
+    /* hd and above */
+    @apply hd:text-2xl;
+  }
+
+  .carousel-index + .carousel-index {
+    @apply mt-4;
+  }
+
+  .separator {
+    /*mobile first*/
+    @apply w-3 h-px bg-white/25 mr-2;
+
+    /* hd */
+    @apply hd:w-36;
+
+    /* fhd and above */
+    @apply fhd:w-48;
+  }
+
+  .separator-double {
+    /*mobile first*/
+    @apply w-6 h-px bg-white/25 ml-2;
+
+    /* hd */
+    @apply hd:w-72;
+
+    /* fhd and above */
+    @apply fhd:w-96;
+  }
+
+  .banner-corousel-content {
+    @apply flex flex-col ml-4;
+  }
+
+  .first-title {
+    /*mobile first*/
+    @apply uppercase text-4xl font-extralight m-0 p-0;
+
+    /* hd */
+    @apply hd:text-6xl;
+
+    /* fhd and above */
+    @apply fhd:text-9xl;
+  }
+
+  .second-title {
+    /*mobile first*/
+    @apply uppercase text-7xl leading-tight font-bold text-gpac-red/50 m-0 p-0;
+
+    /* hd */
+    @apply hd:text-9xl;
+
+    /* fhd and above */
+    @apply fhd:text-[240px] fhd:leading-[200px];
+  }
+
+  .third-title {
+    /*mobile first*/
+    @apply uppercase text-4xl font-bold m-0 p-0;
+
+    /* hd */
+    @apply hd:text-6xl;
+
+    /* fhd and above */
+    @apply fhd:text-9xl;
+  }
+}

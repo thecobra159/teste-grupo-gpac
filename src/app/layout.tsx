@@ -1,9 +1,10 @@
-import { Header } from './components/header'
-import './globals.css'
+import { Header } from '../components/header'
 import { Raleway } from 'next/font/google'
 import { config } from '@fortawesome/fontawesome-svg-core'
+import { Footer } from '../components/footer'
+
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { Footer } from './components/footer'
+import './globals.css'
 
 config.autoAddCss = false
 

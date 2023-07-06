@@ -2,7 +2,7 @@
 
 import { Bebas_Neue } from 'next/font/google'
 import { useEffect, useState } from 'react'
-import '@/app/styles/video-section.css'
+import '@/styles/video-section.css'
 
 interface IVideoSection {
   videoSrc?: string

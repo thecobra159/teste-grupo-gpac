@@ -1,6 +1,6 @@
-import { Banner } from '../components/banner'
-import { ContactUsForm } from '../components/contactUsForm'
-import { ContactUsSection } from '../components/contactUsSection'
+import { Banner } from '../../components/banner'
+import { ContactUsForm } from '../../components/contactUsForm'
+import { ContactUsSection } from '../../components/contactUsSection'
 
 export default function ContactUs(): JSX.Element {
   const bannerSrc = '/background-wallpaper.png'
@@ -18,7 +18,7 @@ export default function ContactUs(): JSX.Element {
 
   const contactUsSectionContent =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a tincidunt dui, vitae posuere ipsum. Praesent vehicula nunc eget risus vehicula rutrum. Vestibulum pulvinar sapien tellus, sit amet ultrices turpis vestibulum at.'
-  
+
 
   return (
     <>

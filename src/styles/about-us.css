@@ -1,0 +1,45 @@
+@layer about-us-Component {
+  .about-us-wrapper {
+    /*mobile first*/
+    @apply flex flex-col items-center w-full min-h-[75vh] bg-white text-black;
+
+    /* hd and above */
+    @apply hd:flex-row;
+  }
+
+  .about-us-content {
+    /*mobile first*/
+    @apply flex flex-col justify-center pl-16 w-full h-full;
+
+    /* hd and above */
+    @apply hd:pl-32;
+  }
+
+  .about-us-title {
+    /*mobile first*/
+    @apply w-fit font-semibold text-black text-3xl uppercase;
+
+    /* hd and above */
+    @apply hd:text-5xl;
+  }
+
+  .about-us-text {
+    /*mobile first*/
+    @apply w-4/5 font-normal text-black text-lg mt-4;
+
+    /* hd and above */
+    @apply hd:text-sm hd:mt-8;
+  }
+
+  .about-us-image {
+    @apply w-4/5 object-cover;
+  }
+
+  .about-us-image-title {
+    /*mobile first*/
+    @apply text-gpac-red uppercase font-semibold text-5xl leading-tight -mt-8 ml-36 object-fill;
+
+    /* hd and above */
+    @apply hd:text-[140px] hd:leading-[100px] hd:-mt-14 hd:ml-60;
+  }
+}

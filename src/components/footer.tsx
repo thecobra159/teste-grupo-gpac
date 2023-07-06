@@ -1,5 +1,5 @@
 import { Bebas_Neue } from 'next/font/google'
-import '@/app/styles/footer.css'
+import '@/styles/footer.css'
 
 const bebasNeue = Bebas_Neue({ weight: '400', subsets: ['latin'] })
 

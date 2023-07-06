@@ -1,0 +1,79 @@
+@layer contact-us-form {
+  .contact-us-form-wrapper {
+    /*mobile first*/
+    @apply flex flex-col items-center justify-center w-full h-screen bg-white;
+
+    /* hd and above */
+    @apply hd:flex-row;
+  }
+
+  .contact-us-form-content {
+    /*mobile first*/
+    @apply flex flex-col items-start justify-start w-4/5 h-fit uppercase gap-4 text-black/50;
+
+    /* hd and above */
+    @apply hd:h-full hd:items-center hd:justify-center;
+  }
+
+  .contact-item-content {
+    /*mobile first*/
+    @apply flex items-center gap-3;
+
+    /* hd and above */
+    @apply hd:gap-6;
+  }
+
+  .contact-item p {
+    /*mobile first*/
+    @apply font-bold text-xl text-black/50;
+
+    /* hd and above */
+    @apply hd:text-3xl;
+  }
+
+  .contact-item + .contact-item {
+    /*mobile first*/
+    @apply mt-4;
+
+    /* hd and above */
+    @apply hd:mt-8;
+  }
+
+  .contact-sub-item {
+    /*mobile first*/
+    @apply text-xl transition-all bg-transparent border-none text-black/50 uppercase;
+    @apply hover:text-gpac-red/50;
+
+    /* hd and above */
+    @apply hd:text-3xl;
+  }
+
+  .contact-input {
+    /*mobile first*/
+    @apply border-b-2 border-0 box-border self-start bg-transparent p-3 uppercase text-sm text-black w-full mt-6;
+
+    /* hd and above */
+    @apply hd:text-lg hd:w-96 hd:self-end hd:mt-0 hd:mr-[20%];
+  }
+
+  .message {
+    @apply pb-16 hyphens-auto resize-none;
+  }
+
+  .contact-input + .contact-input {
+    /*mobile first*/
+    @apply mt-4;
+
+    /* hd and above */
+    @apply mt-8;
+  }
+
+  .contact-form-button {
+    /*mobile first*/
+    @apply bg-white text-black text-lg font-bold py-4 px-6 mt-6 self-end uppercase transition-all rounded;
+    @apply hover:bg-gpac-black hover:text-white;
+
+    /* hd and above */
+    @apply hd:mr-[20%];
+  }
+}

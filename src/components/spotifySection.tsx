@@ -5,8 +5,10 @@ import { getAccessToken, getPlaylists } from '../api/SpotifyAPI'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import '@/styles/spotify-section.css'
+import { isMobile } from 'react-detect'
 
 export async function SpotifySection(): Promise<JSX.Element> {
+  const isMobileAccess = isMobile()
   const token = await getAccessToken()
   const playlists = await getPlaylists(token, {
     user: 'spotify',
@@ -16,24 +18,26 @@ export async function SpotifySection(): Promise<JSX.Element> {
 
   return (
     <section className="spotify-section-wrapper">
-      <Carousel autoPlay centerMode centerSlidePercentage={25}>
+      <Carousel
+        autoPlay
+        centerMode={!isMobileAccess}
+        centerSlidePercentage={!isMobileAccess ? 25 : 100}
+      >
         {playlists &&
           playlists.map((playlist, index) => (
-            <a
-              href={playlist.external_urls.spotify}
-              target="_blank"
-              key={index}
-            >
-              <button className={`spotify-card`}>
-                <Image
-                  src={playlist.images[0].url}
-                  alt={playlist.description}
-                  width={500}
-                  height={500}
-                  sizes="(max-width: 768px) 100vw"
-                />
-              </button>
-            </a>
+            <div key={index}>
+              <a href={playlist.external_urls.spotify} target="_blank">
+                <button className={`spotify-card`}>
+                  <Image
+                    src={playlist.images[0].url}
+                    alt={playlist.description}
+                    width={500}
+                    height={500}
+                    sizes="(max-width: 768px) 100vw"
+                  />
+                </button>
+              </a>
+            </div>
           ))}
       </Carousel>
     </section>

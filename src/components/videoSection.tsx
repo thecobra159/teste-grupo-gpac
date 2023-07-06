@@ -1,7 +1,7 @@
 'use client'
 
 import { Bebas_Neue } from 'next/font/google'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import '@/styles/video-section.css'
 
 interface IVideoSection {

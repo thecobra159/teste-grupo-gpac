@@ -17,6 +17,14 @@ module.exports = {
         'gpac-black': '#222222',
       },
     },
+    screens: {
+      sd: '640px',
+      hd: '1280px',
+      fhd: '1920px',
+      '2k': '2560px',
+      '4k': '3840px',
+      '8k': '7680px',
+    },
   },
   corePlugins: {
     preflight: false,

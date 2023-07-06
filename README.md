@@ -35,6 +35,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Start Project
 
+First of all add spotify credentials to '.env':
+
+```javascript
+NEXT_PUBLIC_SPOTIFY_GRANT_TYPE='client_credentials'
+NEXT_PUBLIC_SPOTIFY_CLIENT_ID='example'
+NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET='example'
+```
+
 Before start the server, run the build:
 
 ```bash
